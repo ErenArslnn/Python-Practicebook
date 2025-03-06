@@ -10,10 +10,12 @@ unit = input("Please select target unit: ")
 if unit == "toKM":
     miles = float(input("Please provide Mile you want to convert to KM: "))
     kilometer = miles * 1.609344
-    print(f"Your mile equals to: {kilometer} kilometers.")
+    roundedKilometers = round(kilometer, 2)
+    print(f"Your mile equals to: {roundedKilometers} kilometers.")
 elif unit == "toMile":
     kilometer = float(input("Please provide Kilometer you want to convert to Mile: "))
     miles = kilometer / 1.609344
-    print(f"Your kilometer equals to: {miles} miles.")
+    roundedMiles = round(miles, 2)
+    print(f"Your kilometer equals to: {roundedMiles} miles.")
 else:
     print("Your unit is wrong. Please provide 'toKM' for miles to kilometers or 'toMile' for kilometers to Miles")
