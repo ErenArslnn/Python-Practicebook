@@ -18,3 +18,22 @@ print(divide)
 print(mode)
 print(exponential)
 print(intDivide)
+
+# we also can assign our operators to different variables. Normally if you want to sum 'x' and '5', you would use 'x = x + 5'. To make it easier we have assign operators:
+
+a = 10
+
+a += 5      # ----> 'a' assigned to '15'
+print(a)    # ----> '15' will be printed.
+
+a -= 5      # a = a - 5
+print(a)
+a *= 5      # a = a * 5
+print(a)
+a /= 5      # a = a / 5
+print(a)
+a %= 5      # a = a % 5
+print(a)
+a **= 5     # a = a ** 5
+print(a)
+
