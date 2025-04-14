@@ -4,15 +4,19 @@ benzin = 1.5
 diesel = 1.6
 lpg = 0.6
 
-distence = int(input("Please enter your travel distence in km: "))
+distence = float(input("Please enter your travel distence in km: "))
 fuel = input("Please enter your fuel type (Benzin, diesel, lpg): ").strip().lower()
+avgConsumption = float(input("Please enter your average fuel consumption for 100 kilometers: "))
+costBenzin = ((distence * avgConsumption) / 100) * benzin
+costDiesel = ((distence * avgConsumption) / 100) * diesel
+costLpg = ((distence * avgConsumption) / 100) * lpg
 
 if(fuel == "benzin"):
-    print(f"Your cost for {distence} km with {fuel} is {distence * fuel}.")
+    print(f"Your cost for {distence} km with {fuel} is {costBenzin}.")
 elif(fuel == "diesel"):
-    print(f"Your cost for {distence} km with {fuel} is {distence * fuel}.")
+    print(f"Your cost for {distence} km with {fuel} is {costDiesel}.")
 elif(fuel == "lpg"):
-    print(f"Your cost for {distence} km with {fuel} is {distence * fuel}.")
+    print(f"Your cost for {distence} km with {fuel} is {costLpg}.")
 else:
     print("Please enter a valid fuel type (benzin, diesel, lpg).")
 
