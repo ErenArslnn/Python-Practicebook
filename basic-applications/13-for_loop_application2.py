@@ -40,7 +40,7 @@ for items in products:
 print("Solution 4:")
 key = input("Please enter a brand: ").strip().lower()
 for items in products:
-    if items.get("product") in key:
+    if items["product"].lower().find(key) > -1:
         print(f"The {key} products you are looking for are: {items.get("product")} with the price of {items.get("price")} dollars.")
 
 
