@@ -6,5 +6,5 @@ def loginInfo(**kwargs):
     for key,value in kwargs.items():
         print(f"{key}: {value} \n")
 
-loginInfo(username = 'lionellmessi', email = 'messi@goat.com', password = '123messi123')
+loginInfo(username = 'lionellmessi', email = 'messi@goat.com', keylogin = '123messi123')
 
